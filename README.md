@@ -23,7 +23,15 @@
 
 First, install all [build dependencies](docs/dev/dependencies.md).
 
-Clone this repository. Then build the `openshift-install` binary with:
+Clone this repository.
+
+Set the architecture. Values canbe amd64(default), aarch64(for ARM64).
+
+```sh
+export DEFAULT_ARCH=aarch64
+```
+
+Then build the `openshift-install` binary with:
 
 ```sh
 hack/build.sh
